@@ -1,0 +1,104 @@
+// Home Hero ==========
+
+.homeHeroContainer {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 50px;
+		@media screen and (min-width: $breakpoint-tablet) {
+		top: 60px;
+		}
+		@media screen and (min-width: $breakpoint-desktop) {
+		top: 5%;
+		}
+
+	.homeHero {
+		background-image: url("/images/hero.jpg");
+		background-position: center;
+   		background-repeat: no-repeat;
+   		background-size: cover;
+   		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		border-bottom: 8px solid $colorset1;
+
+		.homeHeroContent {
+			background-color: rgba(63,114,175, 0.7);
+			width: 100%;
+			height:120px;
+			padding: 1em;
+			margin: 0 auto;
+			text-align: center;
+			color: $dark;
+			font-family: $mainFont;
+			line-height: 1.2;
+			font-weight: 700;
+
+			h1 {
+				font-family: $headerFont;
+				font-weight: 800;
+				color: $dark;
+				font-size: 2.5em;
+			}
+
+			p {
+				font-size: 1.3em;
+			}
+
+			@media screen and (min-width: $breakpoint-tablet) {
+					height:25%;
+
+					h1 {
+						font-size: 2.6em;
+					}
+				}
+
+			@media screen and (min-width: $breakpoint-desktop) {
+					height: 30%;
+					padding: 2em 5em;
+					
+					h1 {
+						font-size: 3em;
+					}
+				}
+			@media screen and (min-width: $breakpoint-desktop-lg) {
+					
+					padding: 5em 10em;
+					
+					h1 {
+						font-size: 3em;
+					}
+				}
+		}
+	}
+}
+
+.homeHeroButton {
+	display:none;
+	margin: 2em auto;
+	outline: none;
+	transition: all .2s ease-out;
+	width: 100%;
+	@include setBgColorAndHover(#000000, #ffffff);
+
+	a {
+		color: $light;
+		display: block;
+		padding: 1em;
+	}	
+}
+
+// Hero PAGES ============
+.herocontainer {
+	width: 100%;
+	height: 20%;
+
+	.hero {
+		
+
+		.herocontent {
+			
+		}
+	}
+}

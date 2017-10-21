@@ -1,0 +1,38 @@
+<footer>
+	<!-- === ADDRESS DETAILS === -->
+	
+	<a href="#top" class="scrolltoRW"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+	
+	<p>You want to know more about Spartan Cats. please send us an email: <a href="mailto:andrew@spartancats.com">andrew@spartancats.com</a> Stockton-on-Tees, England, United Kingdom</p>
+   	<p>Web site designed and developed by Aimee Tacchi &copy; 2017 All rights reserved</p>
+</footer>
+</div> <!-- end of container -->
+	<!-- jQuery -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script>
+    	 //Scroll smooth on a tag links.
+		 $('.scrolltoRW').click(function (e) {
+			   e.preventDefault;
+              var aTag = $(this).attr('href');
+              $('html,body').animate({
+                  scrollTop: $(aTag).offset().top
+              }, 600);
+              return false;
+          });
+
+		 // Burger Menu
+		 	$(".burger-menu").click(function(){
+				$(this).toggleClass('active');
+			 	$("nav").fadeToggle();
+
+		});
+	</script>
+    
+	
+</body>
+</html>
